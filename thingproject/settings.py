@@ -68,8 +68,6 @@ TEMPLATES = [
     },
 ]
 
-AUTH_USER_MODEL = "things.Thing"
-
 WSGI_APPLICATION = 'thingproject.wsgi.application'
 
 
