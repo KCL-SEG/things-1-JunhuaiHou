@@ -6,6 +6,6 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 class Thing(Model):
-    name = models.TextField()
+    name = models.TextField(unique = True)
     description = models.TextField()
     quantity = models.IntegerField()
