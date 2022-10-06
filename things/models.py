@@ -8,4 +8,4 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class Thing(Model):
     name = models.TextField(unique = True, max_length=30, blank = False)
     description = models.TextField(max_length=120)
-    quantity = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(100)])
+    quantity = models.IntegerField()
